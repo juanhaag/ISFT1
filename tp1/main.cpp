@@ -40,7 +40,9 @@ void ejercicioUno()
 void ejercicioDos()
 {
     const double PI = 3.14;
-    double volumen = (PI * (((14.5) * (14.5)) / 26.79)) / 3;
+    double radio =14.5;
+    double altura =26.79;
+    double volumen = (PI * (((radio) * (radio)) / altura)) / 3;
     cout << "----------------EJERCICIO 2------------------------------" << endl;
     cout << "volumen de un cono con"
          << "un radio de la base de 14,5 y una altura de 26,79, es: "
