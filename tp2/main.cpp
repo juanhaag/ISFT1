@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void calcularEdad(int anioActual);
+void calcularEdad(int anioActua, int mesActual);
 void promedio();
 void calcularProducto();
 void calcularVolumen();
@@ -10,7 +10,7 @@ void convertirSegundos(int segundos);
 
 int main(int argc, char const *argv[])
 {
-    calcularEdad(2023);
+    calcularEdad(2023, 4);
     promedio();
     calcularProducto();
     convertirCelcius();
@@ -19,17 +19,25 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-void calcularEdad(int anioActual)
+void calcularEdad(int anioActual, int mesActual)
 {
     // Se puede realizar con librerias de tiempo para lograr mayor exactitud
     int dia, mes, anio;
+    int edad = 0;
     cout << "Ingrese dia de nacimiento" << endl;
     cin >> dia;
     cout << "Ingrese mes de nacimiento" << endl;
     cin >> mes;
     cout << "Ingrese anio de nacimiento" << endl;
     cin >> anio;
-    cout << "Tu edad es: " << anioActual - anio << endl;
+    if (mes > mesActual)
+    {
+        cout << "Tu edad es: " << (anioActual - anio) - 1 << endl;
+    }
+    else
+    {
+        cout << "Tu edad es: " << anioActual - anio << endl;
+    }
 }
 
 void promedio()
@@ -76,7 +84,7 @@ void convertirCelcius()
     cout << "Ingrese grados Fahrenheit" << endl;
     cin >> gradosF;
     gradosC = ((gradosF - 32) * (5. / 9));
-    cout << "La conversion a Grados celcius da como resultado C " << gradosC<<endl;
+    cout << "La conversion a Grados celcius da como resultado C " << gradosC << endl;
 }
 
 void convertirSegundos(int segundos)
