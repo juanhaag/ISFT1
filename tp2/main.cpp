@@ -8,7 +8,7 @@ void calcularVolumen();
 void convertirCelcius();
 void convertirSegundos(int segundos);
 
-int main(int argc, char const *argv[])
+int main(int argc, char const * argv[])
 {
     calcularEdad(2023, 4);
     promedio();
