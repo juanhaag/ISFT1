@@ -22,6 +22,7 @@ string seleccionaFruta();
 int main(int argc, char const *argv[])
 {
     Pedido pedido1 = realizarPedido();
+    cout << pedido1.frutas;
     return 0;
 }
 
@@ -47,8 +48,8 @@ string seleccionaFruta()
 
     do
     {
-        cout << "Las frutas son:" << endl;
-        cout << "1 -Banana" << endl;
+        cout << " frutas son:" << endl;
+        cout << "1 -LasBanana" << endl;
         cout << "2 -Manzana" << endl;
         cout << "3 -Naranja" << endl;
         cout << "4 -Pomelo" << endl;
