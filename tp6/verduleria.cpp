@@ -17,6 +17,27 @@ typedef struct Pedido
     string fechaEntrega;
     string frutas;
 };
+
+
+
+typedef Invitado tArray[N];
+typedef struct ListaInvitados {
+    tArray invitados;
+    int contador;
+} ;
+
+typedef struct Invitado
+{
+    string nombreApellido;
+    int dni;
+    bool confirmacion;
+} ;
+typedef struct Ticket{
+    int numeroTicket;
+    Invitado datos;
+};
+
+
 Pedido realizarPedido();
 string seleccionaFruta();
 int main(int argc, char const *argv[])
