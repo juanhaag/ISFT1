@@ -1,0 +1,334 @@
+
+
+  /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #010101;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    -webkit-text-fill-color: #fff;
+  }
+  
+  /* Estilos específicos */
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .oculto{
+    display: none;
+  }
+
+  .visible{
+    display: block;
+  }
+
+  .btn_menu {
+    position: absolute;
+    left: 1%;
+    bottom: 43%;
+    background-color: #0D8EA3;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+  }
+
+  .carrousel {
+    width: 100%;
+    height: 400px;
+    background: url(../img/imagen1.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .img_{
+    position: absolute;
+    left: 38%;
+    top: 23%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* ASAS*/
+  
+  #menu {
+    background-color: white; /* Color de fondo del menú */
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
+}
+
+#menu a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px; /* Espaciado entre enlaces */
+    color: black; /* Color del texto */
+    font-weight: bold;
+    font-size: 12px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno de los enlaces */
+    border: 2px solid #004a8f; /* Borde de 2px con el mismo color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave de colores */
+    margin-top: 10px;
+}
+
+#menu a:hover {
+    background-color: #0056a9; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+    border: 2px solid #013d74; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+  
+  /*ASD*/
+
+
+  .carrera-box {
+  border: 2px solid #0074e4; /* Color del borde */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Espaciado externo superior e inferior */
+  background-color: #f7f7f7; /* Color de fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.carrera-box h2 {
+  color: #0074e4; /* Color del título */
+}
+
+.carrera-box a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #0074e4; /* Color de fondo de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.carrera-box a:hover {
+  background-color: #0056a9; /* Cambio de color al pasar el mouse sobre los enlaces */
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-buttons{
+  display: flex;
+}
+
+.contact-b{
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.contact-b:hover{
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+.contact-b .img_contact{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 150px) and (max-width:300px) {
+  .carrousel {
+    height: 200px;
+  }
+
+  .btn_menu {
+    left: 2%;
+    bottom: 46%;
+  }
+
+  .carrera-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 30px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 35px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width:600px) {
+  .carrousel {
+    height: 200px;
+  }
+
+  .btn_menu {
+    left: 2%;
+    bottom: 60%;
+  }
+
+  .carrera-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 30px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 35px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .carrousel {
+    height: 300px;
+  }
+
+  .btn_menu {
+    left: 1%;
+    bottom: 64.5%;
+  }
+
+  .carrera-box {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 35px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 40px;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 375px) {
+  .carrousel {
+    height: 200px;
+  }
+
+  .btn_menu {
+    left: 2%;
+    bottom: 52%;
+  }
+
+  .carrera-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 30px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 35px;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1023px) {
+  .carrousel {
+    height: 300px;
+  }
+
+  .btn_menu {
+    left: 1%;
+    bottom: 70%;
+  }
+
+  .carrera-box {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 35px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+  .carrousel {
+    height: 300px;
+  }
+
+  .btn_menu {
+    left: 1%;
+    bottom: 30%;
+  }
+
+  .carrera-box {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .contact-b {
+    flex: 0 0 35px;
+  }
+
+  .contact-b:hover {
+    flex: 0 0 40px;
+  }
+}
